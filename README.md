@@ -1,4 +1,4 @@
-**CONNECT 4 IN VERILOG**
+## **CONNECT 4 IN VERILOG**
 
 Hello! My name is Eric Cho, and I am studying computer engineering. In my free time, I wanted to gain more experience with Verilog
 aside from completing most of the HDLbits problems. Thus, I decided to create a game on a Nexys A7 FPGA. Back in my 11th-grade
@@ -8,7 +8,7 @@ This implementation in Verilog will include VGA/7 seg/led output, game win logic
 
 ---
 
-**OVERVIEW OF THE MODULES**
+# **OVERVIEW OF THE MODULES**
 
 * FSM: finite state machine - determines which screen the game is currently at (start screen, in game screen for p1/p2, and win screen for p1/p2)
 * sseg: seven-segment display - displays information on 7-segment and LEDs based on the state from FSM 
