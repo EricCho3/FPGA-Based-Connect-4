@@ -1,4 +1,4 @@
-# **CONNECT 4 IN VERILOG**
+# **Connect 4 in Verilog**
 
 Hello! My name is Eric Cho, and I am studying computer engineering. In my free time, I wanted to gain more experience with Verilog
 aside from completing most of the HDLbits problems. Thus, I decided to create a game on a Nexys A7 FPGA. Back in my 11th-grade
@@ -8,10 +8,10 @@ This implementation in Verilog will include VGA/7 seg/led output, game win logic
 
 ---
 
-## **OVERVIEW OF THE MODULES**
+## **Overview of the Modules**
 
 * FSM: finite state machine - determines which screen the game is currently at (start screen, in game screen for p1/p2, and win screen for p1/p2)
-* sseg: seven-segment display - displays information on 7-segment and LEDs based on the state from FSM 
+* sseg: seven-segment display - displays information on 7-segment display and LEDs based on the state from FSM 
 * bitboard_logic: determines if p1 or p2 won by analyzing their respective piece placements
 * clk_25Mhz: divides the internal clock of 100Mhz by 4 to achieve 25Mhz for 640x480 @ 60hz for VGA
 * VGA_Sync: handles the VGA timing states and clock cycles for the current pixel row being drawn (row by row) (instantiates clk_25Mhz here)
