@@ -10,7 +10,7 @@ I wanted to compare my synchronous implementation in Java to a fully functioning
 ## **Overview of the Modules**
 
 * FSM: finite state machine - determines which screen the game is currently on (start screen, in-game screen for p1/p2, and win screen for p1/p2)
-* sseg: seven-segment display - displays information on 7-segment display and LEDs based on the state from FSM 
+* sseg: seven-segment display - displays information on 7-segment display and LEDs based on the state from the FSM 
 * bitboard_logic: determines if p1 or p2 won by analyzing their respective piece placements
 * clk_25Mhz: divides the internal clock of 100Mhz by 4 to achieve 25Mhz for 640x480 @ 60hz for VGA
 * VGA_Sync: handles the VGA timing states and clock cycles for the current pixel row being drawn (row by row) (instantiates clk_25Mhz here)
@@ -19,6 +19,6 @@ I wanted to compare my synchronous implementation in Java to a fully functioning
 * VGA_End: VGA output for p1/p2 end state (which player won and button to restart)
 * VGA_Top_module: creates the instances of every VGA output module
 * Top_Module: creates an instance of VGA_Top_module, bitboard_logic, VGA_Sync, sseg, FSM
-* ascii_ROM: from "FPGADUDE" on GitHub; it contains the ASCII data to output characters in block RAM (8x16 pixels per character)
+* ascii_ROM: from "FPGADUDE" on GitHub; it contains the ASCII data to output characters in block RAM (8x16 pixels per ASCII character)
 * Debounce: takes a positive-edge button input and outputs the same press with a ~21 ms delay
 * VGA_Draw: A file to test Draw output when debugging (not needed; VGA_End currently works fine!) 
