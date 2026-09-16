@@ -22,3 +22,4 @@ This implementation in Verilog will include VGA/7 seg/led output, game win logic
 * Top_Module: creates an instance of VGA_Top_module, bitboard_logic, VGA_Sync, sseg, FSM
 * ascii_ROM: from "FPGADUDE" on GitHub; it contains the ASCII data to output characters in block RAM (8x16 pixels per character)
 * Debounce: takes a positive-edge button input and outputs the same press with a ~21 ms delay
+* VGA_Draw: A file to test Draw output when debugging (not needed; VGA_End currently works fine!) 
