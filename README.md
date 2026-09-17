@@ -5,6 +5,8 @@ aside from completing most of the HDLbits problems. Thus, I decided to create a 
 computer science class, I created a game of Connect 4 in Java that ran sequentially (only in main) and outputted to the terminal.
 I wanted to reimplement it in Verilog with parallel, clock-synchronous logic in mind, to see how a hardware-native design would differ from a purely sequential software one. This led me to represent the board as a bitboard so win-checking and state updates could happen in parallel rather than through sequential loops, unlike the original Java version.
 
+* [View the original Java implementation](https://github.com/EricCho3/Java-Connect-4)
+
 ---
 
 ## **Overview of the Modules**
