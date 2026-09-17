@@ -2,8 +2,8 @@
 
 Hello! My name is Eric Cho, and I am studying computer engineering. In my free time, I wanted to gain more experience with Verilog
 aside from completing most of the HDLbits problems. Thus, I decided to create a game on a Nexys A7 FPGA. Back in my 11th-grade
-computer science class, I created a game of Connect 4 in Java that ran synchronously (only in main) and outputted to the terminal.
-I wanted to compare my synchronous implementation in Java to a fully functioning version in Verilog with parallel and synchronous logic in mind.
+computer science class, I created a game of Connect 4 in Java that ran sequentially (only in main) and outputted to the terminal.
+I wanted to reimplement it in Verilog with parallel, clock-synchronous logic in mind, to see how a hardware-native design would differ from a purely sequential software one. This led me to represent the board as a bitboard so win-checking and state updates could happen in parallel rather than through sequential loops, unlike the original Java version.
 
 ---
 
